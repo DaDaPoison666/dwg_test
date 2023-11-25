@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"Wikipedia testing","Main page of Wikipedia","Test of main page of WIKI in different languages","0","0","3","0","0"
+"Wikipedia testing","Main page of Wikipedia","Test of search people from DB in WIKI","0","0","7","0","0"
+"Bill Gate's wiki testing ","","Test of Bill Gates page picture","0","0","1","0","0"
+"Wikipedia testing","Main page of Wikipedia","Test of searching bar using Search button","0","0","1","0","0"
+"Bill Gate's wiki testing ","","Test of containing context in main text","0","0","1","0","0"
+"Wikipedia testing","Main page of Wikipedia","Test of searching bar using submit","0","0","1","0","0"
