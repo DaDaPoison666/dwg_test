@@ -1,0 +1,22 @@
+stages:
+  - test
+
+variables:
+  POSTGRES_DB: "bwg"
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "qasergyuj"
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y python3.11 python3-pip
+  - pip3 install allure
+  - apt-get install -y postgresql-client
+
+test_job:
+  stage: test
+  script:
+    - pip3 install -r requirements.txt || exit 1
+    - psql -h localhost -U $POSTGRES_USER -d $POSTGRES_DB -c "CREATE EXTENSION IF NOT EXISTS citext;" || exit 1
+    - pytest -s --alluredir results || exit 1
+    - allure generate ./allure-results --clean || exit 1
+
