@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="pyopenvpn" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="tests.tests_web_banking.test_auth_page.TestAuthPage.driver" />
+          <option value="tests.tests_web_banking.test_authorised_zone.test_transacrions.test_internal_payment.TestInternalPayment.driver" />
+          <option value="tests.tests_operator_panel.test_operator_dashboard.TestOperatorDashboard.driver" />
+          <option value="tests.tests_operator_panel.test_individuals.test_aml_matches.TestAmlMatches.driver" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
