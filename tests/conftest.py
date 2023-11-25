@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 @pytest.fixture
 def get_chrome_options():
     options = ChromeOptions()
-    options.add_argument('--chrome')  # Use 'headless' if you don't need browser UI or 'chrome' if you need UI
+    options.add_argument('--headless')  # Use 'headless' if you don't need browser UI or 'chrome' if you need UI
     options.add_argument('--start-maximized')
     options.add_argument('--log-level=3')
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
