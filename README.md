@@ -17,6 +17,7 @@ The tests use a PostgreSQL database.
 ## Running Tests
 
 ```pytest -s --alluredir results```
+
 ```allure generate ./allure-results --clean```
 - The -s flag prints the test output to the console.
 - Allure reports are stored in the results folder.
